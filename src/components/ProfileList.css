@@ -1,0 +1,19 @@
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px; /* Padding around the grid */
+  }
+  
+  @media (max-width: 768px) {
+    .profile-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-grid {
+      grid-template-columns: 1fr; /* 1 column on extra small screens */
+    }
+  }
+  
